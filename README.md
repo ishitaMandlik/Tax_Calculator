@@ -25,7 +25,8 @@ How to Run Locally
 
 Live Demo
 
-You can view a live demo of the web application [here]([<insert_link_to_live_demo>](https://661cf463bbe12332f7fcba8d--incometaxcalculator1.netlify.app/)).
+You can view a live demo of the web application [here] ![image](https://github.com/ishitaMandlik/Tax_Calculator/assets/141431551/84e46915-b44f-44f1-9d22-5fd780e293fc)
+
 
 Screenshots
 
