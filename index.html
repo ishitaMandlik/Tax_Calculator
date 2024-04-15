@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tax Calculator</title>
+  
+</head>
+<body>
+    <div class="main">
+        <form id="taxForm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="income">Enter gross Income
+                            <i id="incomeError" class="fa-regular fa-circle-question error-icon" title="Gross annual income is your total salary in a year before any deductions"></i>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="text"
+                            id="income"
+                            name="income"
+                            placeholder="Enter gross annual income"
+                            required
+                        />
+                        <i
+                        title="Please enter numbrs only"
+                          id="incomeErrorIcon"
+                          class="fa-solid fa-circle-exclamation"
+                        ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="extraIncome">Enter extra income
+                            <i id="extraIncomeErrorIcon" class="fa-regular fa-circle-question error-icon" title="Extra income from other sources"></i>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="text"
+                            id="extraIncome"
+                            name="extraIncome"
+                            placeholder="Enter extra income from other sources"
+                            required
+                        />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="agegroup">Enter age group
+                            <i id="ageError" class="fa-regular fa-circle-question error-icon" title="Select your age group"></i>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                        type="number"
+                        id="number"
+                        name="agegroup"
+                        placeholder="Enter the Age Group"
+                        min="18"
+                        step="1"
+                      />
+                        <select name="agegroup" id="age" title="age group">
+                            <optgroup>
+                                <option value="Select">Select</option>
+                                <option value="<40">&lt;40</option>
+                                <option value="≥ 40 & < 60">&ge; 40 &amp; &lt; 60</option>
+                                <option value="≥ 60">&ge; 60</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="deductions">Enter total applicable deductions
+                            <i id="deductionsError" class="fa-regular fa-circle-question error-icon" title="Add total applicable deductions"></i>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="text"
+                            id="deductions"
+                            name="deductions"
+                            placeholder="Add total applicable deductions"
+                            required
+                        />
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td id="btn">
+                        <button type="button" onclick="calculateTax()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
