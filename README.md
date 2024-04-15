@@ -25,10 +25,20 @@ How to Run Locally
 
 Live Demo
 
-You can view a live demo of the web application [here](<insert_link_to_live_demo>).
+You can view a live demo of the web application [here]([<insert_link_to_live_demo>](https://661cf463bbe12332f7fcba8d--incometaxcalculator1.netlify.app/)).
 
 Screenshots
 
+1. landing Page :
+   ![image](https://github.com/ishitaMandlik/Tax_Calculator/assets/141431551/cf235650-317d-4f75-ad78-256bd2950695)
+2. Error message when some one inputs letters instead of numbers:
+   ![image](https://github.com/ishitaMandlik/Tax_Calculator/assets/141431551/4fa18b34-e17d-4b26-920a-7a2cff5be43f)
+3 Results with Dummy inputs as follows 
+i) Income - 40 lakhs
+ii) Extraincome - 0;
+iii) Age group - < 40
+iv) total Decuctions - 0:
+![image](https://github.com/ishitaMandlik/Tax_Calculator/assets/141431551/33f81e54-a354-4abc-aa81-eaad075caabe)
 
 
 Future Improvements
